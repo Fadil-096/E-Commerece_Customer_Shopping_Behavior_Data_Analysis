@@ -5,6 +5,8 @@ An end-to-end data analytics project that analyzes customer shopping behavior us
 
 An end-to-end Data Analytics project that analyzes customer purchasing behavior to uncover spending patterns, customer loyalty, product performance, and business growth opportunities using Python, PostgreSQL, and Power BI.
 
+
+
 📌 Project Overview
 
 Businesses generate thousands of customer transactions every day, but raw transactional data alone cannot drive better business decisions.
@@ -25,7 +27,10 @@ Subscription behavior
 Product performance
 Discount effectiveness
 Demographic insights
+
+
 🎯 Business Problem
+
 
 A retail company wants to better understand its customers to improve:
 
@@ -38,7 +43,10 @@ Revenue generation
 
 The goal is to answer important business questions through data analytics and convert insights into actionable recommendations.
 
+
 📂 Repository Structure
+
+
 Customer-Behavior-Analysis/
 │
 ├── Code files/
@@ -55,7 +63,11 @@ Customer-Behavior-Analysis/
 ├── Problem Statement & Deliverables.pdf
 │
 └── README.md
+
+
 ⚙️ Tech Stack
+
+
 Category	Tools
 Programming	Python
 Libraries	Pandas
@@ -64,7 +76,11 @@ SQL	PostgreSQL SQL
 Visualization	Power BI
 Notebook	Jupyter Notebook
 Version Control	Git & GitHub
+
+
 📊 Dataset Information
+
+
 Total Records: 3,900
 Total Columns: 18
 Unique Customers: 3,900
@@ -81,7 +97,10 @@ Payment methods
 Shipping type
 Customer reviews
 Subscription status
+
+
 🧹 Data Cleaning
+
 
 The raw dataset was cleaned using Python.
 
@@ -95,7 +114,10 @@ Purchase frequency conversion
 Duplicate feature removal
 Data validation
 Export to PostgreSQL
+
+
 🗄 Database
+
 
 The cleaned dataset was imported into PostgreSQL to simulate a business transaction database.
 
@@ -107,7 +129,10 @@ Ranking
 Customer segmentation
 Window functions
 Business KPI calculations
+
+
 📈 Business Questions Answered
+
 
 The project answers ten real-world business questions:
 
@@ -121,7 +146,10 @@ Customer loyalty segmentation
 Top-selling products by category
 Relationship between repeat buyers and subscriptions
 Revenue contribution by age group
+
+
 📊 Dashboard Features
+
 
 The interactive Power BI dashboard includes:
 
@@ -136,7 +164,10 @@ Gender
 Category
 Shipping Type
 Subscription Status
+
+
 📌 Key Insights
+
 
 Some important findings include:
 
@@ -147,7 +178,10 @@ Young Adults generate the highest overall revenue.
 Several products rely heavily on discounts for sales.
 Subscription status has little impact on average purchase value.
 Repeat buyers are not necessarily subscribers.
+
+
 💡 Business Recommendations
+
 
 Based on the analysis:
 
@@ -157,7 +191,11 @@ Review discount strategies
 Promote highly rated products
 Target high-value customer segments
 Increase engagement with female customers
+
+
 📷 Project Workflow
+
+
 Raw Dataset
       │
       ▼
@@ -180,7 +218,11 @@ Business Insights
       │
       ▼
 Recommendations
+
+
 🚀 How to Run the Project
+
+
 1 Clone the repository
 git clone https://github.com/yourusername/Customer-Behavior-Analysis.git
 2 Install dependencies
@@ -211,7 +253,10 @@ Customer_Behavior_Dashboard.pbix
 
 using Power BI Desktop.
 
+
 📁 Deliverables
+
+
 ✅ Cleaned Dataset
 ✅ Python Notebook
 ✅ SQL Queries
@@ -231,6 +276,8 @@ Database Management
 Dashboard Development
 Business Intelligence
 Data Storytelling
+
+
 👨‍💻 Author
 
 M Fadil Ahmed
