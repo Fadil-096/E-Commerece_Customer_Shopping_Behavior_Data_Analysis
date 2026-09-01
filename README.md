@@ -10,10 +10,10 @@
 
 **An end-to-end analytics project: 3,900 retail transactions taken from raw CSV through Python, PostgreSQL, SQL, and Power BI to uncover what actually drives spending, loyalty, and subscription conversion — plus a validated statistical extension that goes beyond the assigned brief.**
 
-**[Dashboard Demo Video →](#dashboard-Demo)** *(https://drive.google.com/file/d/1oFRKaRvLFch8L8sOb19AiCC3Hxm3hszz/view?usp=sharing)*
-**[Full report (PDF) →](./Customer_Behavior_Analysis_Report.pdf)**
-**[Stakeholder presentation (PPTX) →](./Customer_Behavior_Analysis_Presentation.pptx)**
-**[Extension write-up →](./Extension_Beyond_The_Brief.md)**
+* **[Dashboard Demo Video →](https://drive.google.com/file/d/1oFRKaRvLFch8L8sOb19AiCC3Hxm3hszz/view?usp=sharing)**
+* **[Full report (PDF) →](./Customer_Behavior_Analysis_Report.pdf)**
+* **[Stakeholder presentation (PPTX) →](./Customer_Behavior_Analysis_Presentation.pptx)**
+* **[Extension write-up →](./Extension_Beyond_The_Brief.md)**
 
 ---
 
