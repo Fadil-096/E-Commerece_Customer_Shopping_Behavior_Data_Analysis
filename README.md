@@ -10,14 +10,14 @@
 
 **An end-to-end analytics project: 3,900 retail transactions taken from raw CSV through Python, PostgreSQL, SQL, and Power BI to uncover what actually drives spending, loyalty, and subscription conversion — plus a validated statistical extension that goes beyond the assigned brief.**
 
-📷 **[Dashboard preview →](#dashboard-preview)** *(live link coming soon — see note below)*
-📄 **[Full report (PDF) →](./Customer_Behavior_Analysis_Report.pdf)**
-🎤 **[Stakeholder presentation (PPTX) →](./Customer_Behavior_Analysis_Presentation.pptx)**
-🧪 **[Extension write-up →](./Extension_Beyond_The_Brief.md)**
+**[Dashboard Demo Video →](#dashboard-Demo)** *(https://drive.google.com/file/d/1oFRKaRvLFch8L8sOb19AiCC3Hxm3hszz/view?usp=sharing)*
+**[Full report (PDF) →](./Customer_Behavior_Analysis_Report.pdf)**
+**[Stakeholder presentation (PPTX) →](./Customer_Behavior_Analysis_Presentation.pptx)**
+**[Extension write-up →](./Extension_Beyond_The_Brief.md)**
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Key Results at a Glance](#key-results-at-a-glance)
@@ -44,7 +44,7 @@ A retail company wants to understand what drives customer purchasing decisions a
 > [!NOTE]
 > The full assignment brief is in [`Problem_Statement_and_Deliverables.pdf`](./Problem_Statement_and_Deliverables.pdf).
 
-## 🏆 Key Results at a Glance
+## Key Results at a Glance
 
 | Metric | Value |
 |---|---|
@@ -55,7 +55,7 @@ A retail company wants to understand what drives customer purchasing decisions a
 | Subscription predictable from behavior? *(extension)* | **No** — ROC AUC 0.469, no better than random |
 | New customer segment surfaced *(extension)* | **984 customers** missed by the current loyalty tiers |
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 | Skill | Where it shows up |
 |---|---|
@@ -108,7 +108,7 @@ Extension — logistic regression + K-means clustering (beyond the brief)
 
 Full results for all 10 questions are in the [report](./Customer_Behavior_Analysis_Report.pdf) and the [SQL file](./Customer_Behavior_Data_Cleaning.sql).
 
-## 🧪 Extension: Beyond the Brief
+## Extension: Beyond the Brief
 
 *Not part of the assigned deliverables — added to go a layer deeper than "what happened."*
 
@@ -117,7 +117,7 @@ Full results for all 10 questions are in the [report](./Customer_Behavior_Analys
 
 Full methodology, leakage-check output, and interpretation: [`Extension_Beyond_The_Brief.md`](./Extension_Beyond_The_Brief.md).
 
-## 📈 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 Distribution and correlation checks run in `Data_Cleaning.ipynb` before feature engineering:
 
@@ -127,7 +127,7 @@ Distribution and correlation checks run in `Data_Cleaning.ipynb` before feature 
 
 Age, purchase amount, review rating, and previous purchases are all close to uniformly distributed with no significant outliers — and the correlation matrix shows essentially no linear relationship between any pair of numeric features (all correlations under 0.05), which is consistent with the extension's finding that behavior alone doesn't explain subscription.
 
-## 🗂️ Repo Structure
+## Repo Structure
 
 ```
 ├── Data_Cleaning.ipynb                        # Python cleaning + feature engineering
@@ -170,7 +170,7 @@ Age, purchase amount, review rating, and previous purchases are all close to uni
 | Statistical extension | scikit-learn (LogisticRegression, KMeans) |
 | Version control | Git / GitHub |
 
-## ▶️ How to Run
+## How to Run
 
 > [!IMPORTANT]
 > Before your first commit, rename three files so the repo structure above is accurate:
@@ -194,7 +194,7 @@ Age, purchase amount, review rating, and previous purchases are all close to uni
 > [!TIP]
 > This is a static screenshot. A short screen-recording of the slicers in action (converted to GIF) will replace this once available — interactivity is the actual point of the Power BI deliverable.
 
-## 💡 Business Recommendations
+## Business Recommendations
 
 - **Convert non-subscribers.** Spend is flat across subscription status, so the 73%-of-revenue non-subscriber base is the largest growth lever — not price, but visibility of subscriber benefits.
 - **Build a loyalty tier for repeat buyers.** Being a frequent purchaser doesn't currently predict subscription — a structured rewards program could close that gap.
@@ -202,7 +202,7 @@ Age, purchase amount, review rating, and previous purchases are all close to uni
 - **Target the high-spend/low-frequency segment differently.** The 984-customer group surfaced in the extension analysis needs a spend-based re-engagement approach, not a frequency-based loyalty push.
 - **Grow the female customer segment.** Currently under half of male revenue despite a smaller but non-trivial customer base.
 
-## ⚠️ Limitations
+## Limitations
 
 - **Single-snapshot data.** Each row is one customer with no transaction date, so there's no true recency analysis, cohort tracking, or time-series trend — despite the original brief asking about changes in purchasing patterns over time.
 - **Synthetic-data artifacts.** Two features (`gender`, `discount_applied`) show a 100%-pure split against subscription status that isn't plausible as real-world behavior. They were identified and excluded in the extension model — see [`Extension_Beyond_The_Brief.md`](./Extension_Beyond_The_Brief.md) for details.
